@@ -1,0 +1,23 @@
+1 . Jinja 
+    {{ }} // double parenthesis is for displaying
+     * FILTERS
+        - {{username | upper}} // to convert the whole string to upper case
+        - {{username | capitalize}} // To make the first letter upper
+    * Accessing lists
+        list = [ 1 ,2 ,3 ]
+        - {{list.1}} // display item at 1 st index
+
+2.Custom error template
+    Example
+        @app.errorhandler(404)
+        def page_not_found(e):
+            return render_template("error404.html)
+
+
+
+Additional
+* SSH key generation and pushing in =to github
+    1 . mkdir .ssh 
+    2 . ssh-keygen.exe 
+    3 . Enter any file name 
+    4 . cat filename 
